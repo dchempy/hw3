@@ -12,8 +12,7 @@
     <input type="date" name="posted_on" id="posted_on">
   </p>
   <p>
-    <label for="place_id">Place</label>
-    <input type="text" name="place_id" id="place_id">
+    <input type="hidden" name="place_id" id="place_id" value="<%= @place["id"] %>">
   </p>
   <button>Submit</button>
 </form>
@@ -21,3 +20,4 @@
 <p>
   <a href="/places">Back to Place</a>
 </p>
+
